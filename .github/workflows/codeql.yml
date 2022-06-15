@@ -1,0 +1,47 @@
+#
+# SPDX-FileCopyrightText: 2022 EasyCoding Team and contributors
+#
+# SPDX-License-Identifier: MIT
+#
+
+name: CodeQL
+
+on:
+  push:
+    branches:
+    - 'master'
+  pull_request:
+    branches:
+    - 'master'
+
+jobs:
+  analyze:
+    name: Analyze with CodeQL
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language:
+          - 'cpp'
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        submodules: true
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v1
+      with:
+        languages: ${{ matrix.language }}
+    - name: Installing development packages
+      run: |
+        sudo apt-get -y install libsolv0-dev libsolvext0-dev
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v1
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v1
