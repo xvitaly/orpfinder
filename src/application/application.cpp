@@ -28,7 +28,7 @@ std::vector<std::string> Application::GetUnneededPackages() const
 
 int Application::Run()
 {
-    for (std::string& Element: GetUnneededPackages())
+    for (const std::string& Element: GetUnneededPackages())
     {
         std::cout << Element << std::endl;
     }
