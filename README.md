@@ -18,3 +18,12 @@ Command-line tool to find orphaned packages.
 ## License
 
 This project is licensed under the terms of the [MIT license](LICENSE).
+
+## Installation
+
+### Fedora
+
+```bash
+sudo dnf copr enable xvitaly/ecrepo
+sudo dnf install orpfinder
+```
