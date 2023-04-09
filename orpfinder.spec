@@ -4,7 +4,7 @@ Release: 1%{?dist}
 
 License: MIT
 Summary: Command-line tool to find orphaned packages
-URL: https://github.com/EasyCoding/%{name}
+URL: https://github.com/xvitaly/%{name}
 Source0: %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires: pkgconfig(libsolv)

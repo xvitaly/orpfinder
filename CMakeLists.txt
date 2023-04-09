@@ -13,7 +13,7 @@ cmake_minimum_required(VERSION 3.12)
 project(orpfinder
     VERSION 0.1.0
     DESCRIPTION "Command-line tool to find orphaned packages"
-    HOMEPAGE_URL "https://github.com/EasyCoding/orpfinder"
+    HOMEPAGE_URL "https://github.com/xvitaly/orpfinder"
     LANGUAGES CXX
 )
 
