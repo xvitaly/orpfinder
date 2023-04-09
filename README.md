@@ -5,7 +5,7 @@
 [![Ubuntu CI](https://github.com/xvitaly/orpfinder/actions/workflows/ubuntu.yml/badge.svg)](https://github.com/xvitaly/orpfinder/actions/workflows/ubuntu.yml)
 [![CodeQL](https://github.com/xvitaly/orpfinder/actions/workflows/codeql.yml/badge.svg)](https://github.com/xvitaly/orpfinder/actions/workflows/codeql.yml)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/269e90827fa5459db0ed7305f6f74ec0)](https://www.codacy.com/gh/xvitaly/orpfinder/dashboard)
-[![CodeFactor](https://www.codefactor.io/repository/github/easycoding/orpfinder/badge)](https://www.codefactor.io/repository/github/easycoding/orpfinder)
+[![CodeFactor](https://www.codefactor.io/repository/github/xvitaly/orpfinder/badge)](https://www.codefactor.io/repository/github/xvitaly/orpfinder)
 [![GitHub issues](https://img.shields.io/github/issues/xvitaly/orpfinder.svg?label=issues&maxAge=180)](https://github.com/xvitaly/orpfinder/issues)
 ---
 
