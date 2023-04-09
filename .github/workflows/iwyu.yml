@@ -16,7 +16,7 @@ on:
 
 jobs:
   build:
-    name: Build and install project
+    name: Analyze project with include-what-you-use
     runs-on: ubuntu-latest
     container: fedora:latest
     steps:
@@ -39,6 +39,7 @@ jobs:
         cmake -S . -B build \
             -GNinja \
             -DCMAKE_C_COMPILER='clang' \
+            -DCMAKE_C_INCLUDE_WHAT_YOU_USE='include-what-you-use' \
             -DCMAKE_CXX_COMPILER='clang++' \
             -DCMAKE_CXX_INCLUDE_WHAT_YOU_USE='include-what-you-use' \
             -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON \
