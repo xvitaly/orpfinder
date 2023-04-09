@@ -40,7 +40,7 @@ jobs:
         languages: ${{ matrix.language }}
     - name: Installing development packages
       run: |
-        sudo apt-get -y install libsolv0-dev libsolvext0-dev
+        sudo apt-get -y install libsolv-dev libsolvext-dev
     - name: Autobuild
       uses: github/codeql-action/autobuild@v2
     - name: Perform CodeQL Analysis

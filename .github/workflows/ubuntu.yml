@@ -45,7 +45,7 @@ jobs:
         sudo apt-get -y install cmake make
     - name: Installing development packages
       run: |
-        sudo apt-get -y install libsolv0-dev libsolvext0-dev
+        sudo apt-get -y install libsolv-dev libsolvext-dev
     - name: Installing helper tools
       run: |
         sudo apt-get -y install doxygen pandoc
