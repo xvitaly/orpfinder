@@ -20,18 +20,12 @@ jobs:
     runs-on: ubuntu-latest
     container: fedora:latest
     steps:
-    - name: Installing core packages
+    - name: Installing development packages
       run: |
-        sudo dnf -y install git-core
+        sudo dnf -y install clang cmake git-core iwyu ninja-build
     - name: Fetching sources
       uses: actions/checkout@v3
-    - name: Installing clang and include-what-you-use
-      run: |
-        sudo dnf -y install clang iwyu
-    - name: Installing build system
-      run: |
-        sudo dnf -y install cmake ninja-build
-    - name: Installing development packages
+    - name: Installing dependencies
       run: |
         sudo dnf -y install libsolv-devel
     - name: Building project with CMake
