@@ -4,9 +4,10 @@
  * SPDX-License-Identifier: MIT
 */
 
+#include <exception>
 #include <iostream>
-#include <stdexcept>
 #include <memory>
+#include <stdlib.h>
 
 #include "application/application.hpp"
 

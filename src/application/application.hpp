@@ -16,9 +16,8 @@
 
 namespace solv {
 extern "C" {
-#include <solv/pool.h>
-#include <solv/poolarch.h>
-#include <solv/repo_rpmdb.h>
+#include <solv/pooltypes.h>
+#include <solv/repo.h>
 #include <solv/solver.h>
 }
 }
