@@ -5,6 +5,16 @@
 */
 
 #include <iostream>
+#include <stdlib.h>
+
+namespace solv {
+extern "C" {
+#include <solv/pool.h>
+#include <solv/poolarch.h>
+#include <solv/queue.h>
+#include <solv/repo_rpmdb.h>
+}
+}
 
 #include "application/application.hpp"
 
