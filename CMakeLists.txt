@@ -38,13 +38,13 @@ pkg_check_modules(LIBSOLVEXT REQUIRED IMPORTED_TARGET libsolvext)
 # ================= Application target =================
 # ======================================================
 
+set(HEADERS
+    src/application/application.hpp
+)
+
 set(SOURCES
     src/application/application.cpp
     src/main.cpp
-)
-
-set(HEADERS
-    src/application/application.hpp
 )
 
 add_executable(${CMAKE_PROJECT_NAME}
