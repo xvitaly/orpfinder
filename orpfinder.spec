@@ -15,8 +15,8 @@ BuildRequires: gcc-c++
 BuildRequires: ninja-build
 
 %description
-%{name} is a simple command-line tool to find orphaned packages in
-repositories.
+%{name} is a simple command line tool for finding packages that no one depends
+on in repositories.
 
 Such packages can be safely removed.
 
