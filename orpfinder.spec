@@ -1,5 +1,5 @@
 Name: orpfinder
-Version: 0.1.0
+Version: 0.2.0
 Release: 1%{?dist}
 
 License: MIT
@@ -37,5 +37,5 @@ Such packages can be safely removed.
 %{_bindir}/%{name}
 
 %changelog
-* Wed Nov 02 2022 Vitaly Zaitsev <vitaly@easycoding.org> - 0.1.0-1
-- Updated to version 0.1.0.
+* Sun Apr 23 2023 Vitaly Zaitsev <vitaly@easycoding.org> - 0.2.0-1
+- Updated to version 0.2.0.
