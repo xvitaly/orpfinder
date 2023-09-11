@@ -24,7 +24,7 @@ jobs:
       run: |
         sudo dnf -y install clang cmake git-core iwyu ninja-build
     - name: Fetching sources
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Installing dependencies
       run: |
         sudo dnf -y install libsolv-devel
